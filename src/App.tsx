@@ -1,14 +1,11 @@
 import React from 'react';
+import TodoList from './components/TodoList';
 
-// const App: React.FC =()=>{}- can declare a function explixity defining the type as FC ie Fubnction component
-// function App() {
-//   return (
-//     <div className="App">
-//     </div>
-//   );
-// }
-const App: React.FC =()=>{
-  return <div className="App"> </div>
+const App: React.FC = ()=>{
+  const todos = [{id:1,text:'Finish the course'}]
+  return <>
+          <TodoList items={todos}/>
+          </>
 }
 
 
