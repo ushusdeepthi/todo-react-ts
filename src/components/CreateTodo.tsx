@@ -14,10 +14,13 @@ const CreateTodo:React.FC<CreateTodoProps> = (props) => {
         inputRef.current!.value=""
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <div>
+        <h1>Create Todo</h1>
+        <form className="form-control"onSubmit={handleSubmit}>
             <input type="text" placeholder="Add todo here" ref={inputRef} />
-            <input type="submit" value="Add Todo" />
+            <input type="submit" value="Add Todo" className="btn" />
         </form>
+        </div>
     )
 }
 
