@@ -11,6 +11,7 @@ const CreateTodo:React.FC<CreateTodoProps> = (props) => {
         const enteredText = inputRef.current!.value; 
         console.log(enteredText)
         props.onAddTodo(enteredText)
+        inputRef.current!.value=""
     }
     return (
         <form onSubmit={handleSubmit}>
