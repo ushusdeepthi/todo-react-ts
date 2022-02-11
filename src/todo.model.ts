@@ -1,5 +1,5 @@
 export interface Todo{
     id:number;
-    text:string;   
-    details?:string;
+    text:string; 
+    decsription?:string;
 }
